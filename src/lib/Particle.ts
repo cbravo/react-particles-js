@@ -82,6 +82,7 @@ export default class Particle {
 		const defaultSize = this.library.getParameter(p => p.particles.size);
 		size = deepAssign({}, defaultSize, size);
 		this.radius = (size.random ? Math.random() : 1) * size.value;
+		console.log('WOAH!!!!');
 		if (size.anim.enable) {
 			this.size_status = false;
 			this.vs = size.anim.speed / 100;
