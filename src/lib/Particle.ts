@@ -228,8 +228,9 @@ export default class Particle {
 			this.vx = baseVelocity.x;
 			this.vy = baseVelocity.y;
 			if (move.random) {
-				this.vx = this.vx * Math.random();
-				this.vy = this.vy * Math.random();
+				let random_min = (move.random_min) ? move.random_min : 0
+				this.vx = ((this.vx - move.random_min) * Math.random()) + move.random_min;
+				this.vy = ((this.vy - move.random_min) * Math.random()) + move.random_min;
 			}
 		} else {
 			this.vx = baseVelocity.x + Math.random() - 0.5;

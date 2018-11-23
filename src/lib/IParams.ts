@@ -131,6 +131,7 @@ export interface IParticleMoveDefinition {
 	speed: number;
 	direction: MoveDirection;
 	random: boolean;
+	random_min: number;
 	straight: boolean;
 	out_mode: MoveOutMode;
 	bounce: boolean;

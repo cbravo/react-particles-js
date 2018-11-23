@@ -76,6 +76,7 @@ const defaultParams: IParams = {
 			speed: 3,
 			direction: MoveDirection.NONE,
 			random: false,
+			random_min: 0,
 			straight: false,
 			out_mode: MoveOutMode.BOUNCE,
 			bounce: true,
